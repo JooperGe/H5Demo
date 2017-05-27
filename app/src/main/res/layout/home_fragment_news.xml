@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_parent_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_back_approve_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="30px"
+                android:padding="20px"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:src="@mipmap/back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="110px"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="拼乎"
+            android:textColor="@color/blak"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:gravity="center_vertical"
+            android:padding="15px"
+            android:paddingLeft="30px"
+            android:paddingRight="50px"
+            android:src="@mipmap/share" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_hind"
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="@color/cccccccolor" />
+
+    <com.mzwy.pinhu.view.ProgressWebView
+        android:id="@+id/WebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/set_Title"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+
+</LinearLayout>

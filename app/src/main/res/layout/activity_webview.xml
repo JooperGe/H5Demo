@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:WebViewWithProgress="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mzwy.pinhu.MainActivity"
+    >
+
+    <com.mzwy.pinhu.WebViewWithProgress
+        android:id="@+id/detail_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        WebViewWithProgress:progressStyle="horizontal"
+        />
+    
+    </FrameLayout>
+
